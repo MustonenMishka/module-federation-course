@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Header.module.css';
 
@@ -7,5 +8,11 @@ interface IHeaderProps {
 }
 
 export const Header: React.FC<IHeaderProps> = ({ userName }) => {
-  return <div className={styles.Header}>{userName}</div>;
+  return (
+    <div className={styles.Header}>
+      {userName}
+      <Link to="/">Posts</Link>
+      <Link to="/profile">Profile</Link>
+    </div>
+  );
 };

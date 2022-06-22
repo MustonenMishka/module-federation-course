@@ -1,5 +1,5 @@
 {
-  "name": "profilePage",
+  "name": "profile-page",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,8 +28,8 @@
     "craco-module-federation": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "craco start",
+    "build": "craco build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

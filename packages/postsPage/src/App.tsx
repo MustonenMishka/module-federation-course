@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
 
-function App() {
+import './App.css';
+import { PostsPage } from './pages/PostsPage/PostsPage';
+
+export const App: React.FC = () => {
   return (
-    <div className="App">
-      Container
+    <div className="PostsPageApp">
+      <PostsPage />
     </div>
   );
-}
-
-export default App;
+};

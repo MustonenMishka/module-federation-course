@@ -1,8 +1,12 @@
 import React from 'react';
+
 import './App.css';
+import { ProfilePage } from './pages/ProfilePage/ProfilePage';
 
-function App() {
-  return <div className="App">Container</div>;
-}
-
-export default App;
+export const App: React.FC = () => {
+  return (
+    <div className="PostsPageApp">
+      <ProfilePage />
+    </div>
+  );
+};
